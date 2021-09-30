@@ -1,0 +1,67 @@
+* {
+    margin: 0px;
+}
+.topBorder {
+    display: grid;
+    grid-area: topBorder;
+    grid-template-columns: 1fr repeat(3, 20px);
+}
+.windowButton {
+    border: dotted rgb(69, 66, 80) 1px;
+    background-color: rgb(29, 29, 51);
+}
+.leftBorder {
+    display: grid;
+    grid-area: leftBorder;
+}
+.main {
+    display: grid;
+    grid-area: main;
+    grid-template-columns: 250px 1fr;
+    border-top-left-radius: 8px;
+}
+.leftMain {
+    display: grid;
+    border-top-left-radius: 8px;
+    grid-template-rows: 50px 1fr;
+    gap: 1px;
+}
+.topMainLeft {
+    background-color: rgb(82, 82, 82);
+    border-top-left-radius: 8px;
+    display: grid;
+}
+.bottomMainLeft {
+    background-color: rgb(82, 82, 82);
+}
+
+.rightMain {
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    gap: 1px;
+}
+.topMainRight {
+    display: grid;
+    background-color: grey;
+}
+.bottomMainRight {
+    display: grid;
+    grid-template-columns: 1fr 250px;
+}
+.mainSection {
+    display: grid;
+
+}
+.nameSection {
+    display: grid;
+    background-color: rgb(82, 82, 82);
+}
+.container {
+    display: grid;
+    height: 100vh;
+    background-color: rgba(25, 26, 34, 0.918);
+    grid-template:
+      "leftBorder topBorder" 20px
+      "leftBorder main" 1fr /
+      80px 1fr;
+}
